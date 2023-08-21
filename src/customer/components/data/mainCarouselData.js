@@ -1,0 +1,22 @@
+export const mainCarouselData = [
+  {
+    image:
+      "https://media.modicare.com/prelogin/product/categories/skin%20_care.jpg",
+  },
+  {
+    image:
+      "https://media.modicare.com/prelogin/product/categories/color_cosmetic.jpg",
+  },
+  {
+    image:
+      "https://media.modicare.com/prelogin/product/categories/personal_care.jpg",
+  },
+  {
+    image:
+      "https://media.modicare.com/prelogin/product/categories/wellness.jpg",
+  },
+  {
+    image:
+      "https://media.modicare.com/prelogin/product/categories/lifestyle.jpg",
+  },
+];
