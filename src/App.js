@@ -3,6 +3,8 @@ import "./App.css";
 import Navigation from "./customer/components/navigation/Navigation";
 import HomePage from "./customer/components/page/HomePage/HomePage";
 import Product from "./customer/components/product/Product";
+import Footer from "./customer/components/footer/Footer";
+import ProductDetails from "./customer/productDetails/ProductDetails";
 
 function App() {
   return (
@@ -10,7 +12,9 @@ function App() {
       <Navigation />
       <div>
         {/* <HomePage /> */}
-        <Product />
+        {/* <Product /> */}
+        <ProductDetails />
+        <Footer />
       </div>
     </div>
   );
