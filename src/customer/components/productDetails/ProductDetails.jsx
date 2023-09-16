@@ -4,6 +4,7 @@ import { RadioGroup } from "@headlessui/react";
 
 const product = {
   name: "Basic Tee 6-Pack",
+  brand: "XYZ",
   price: "$192",
   href: "#",
   breadcrumbs: [
@@ -129,9 +130,15 @@ export default function ProductDetails() {
           </div>
 
           {/* Product info */}
-          <div className="mx-auto max-w-2xl px-4 pb-16 pt-10 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:grid-rows-[auto,auto,1fr] lg:gap-x-8 lg:px-8 lg:pb-24 lg:pt-16">
-            <div className="lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8">
-              <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">
+          <div className="lg:col-span-1 maxt-auto max-w-2xl px-4 pb-16 sm:px-6 lg:max-w-7xl lg:px-8 lg:pb-24">
+            <div
+              className="lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8 text-left
+            "
+            >
+              <h1 className="text-lg lg:text-xl font-semibold text-gray-900">
+                {product.brand}
+              </h1>
+              <h1 className="text-lg lg:text-xl text-gray-900 opacity-60 pt-1">
                 {product.name}
               </h1>
             </div>
@@ -139,7 +146,10 @@ export default function ProductDetails() {
             {/* Options */}
             <div className="mt-4 lg:row-span-3 lg:mt-0">
               <h2 className="sr-only">Product information</h2>
-              <p className="text-3xl tracking-tight text-gray-900">
+              <div className="flex space-x-5 items-center text-lg lg:text-xl text-gray-900 mt-6">
+                <p></p>
+              </div>
+              <p className="text-3xl tracking-tight text-gray-900 text-left">
                 {product.price}
               </p>
 
@@ -310,7 +320,7 @@ export default function ProductDetails() {
                 <h3 className="sr-only">Description</h3>
 
                 <div className="space-y-6">
-                  <p className="text-base text-gray-900">
+                  <p className="text-base text-gray-900 text-left">
                     {product.description}
                   </p>
                 </div>
@@ -322,7 +332,10 @@ export default function ProductDetails() {
                 </h3>
 
                 <div className="mt-4">
-                  <ul role="list" className="list-disc space-y-2 pl-4 text-sm">
+                  <ul
+                    role="list"
+                    className="list-disc space-y-2 pl-4 text-sm text-left"
+                  >
                     {product.highlights.map((highlight) => (
                       <li key={highlight} className="text-gray-400">
                         <span className="text-gray-600">{highlight}</span>
@@ -336,7 +349,9 @@ export default function ProductDetails() {
                 <h2 className="text-sm font-medium text-gray-900">Details</h2>
 
                 <div className="mt-4 space-y-6">
-                  <p className="text-sm text-gray-600">{product.details}</p>
+                  <p className="text-sm text-gray-600 text-left">
+                    {product.details}
+                  </p>
                 </div>
               </div>
             </div>
