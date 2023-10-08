@@ -16,9 +16,6 @@ const HomePage = () => {
         <HomeSectionCarousel data={skin_care} sectionName={"Wellness"} />
         <HomeSectionCarousel data={skin_care} sectionName={"Home Care"} />
       </div>
-      <div>
-        <Footer />
-      </div>
     </div>
   );
 };
