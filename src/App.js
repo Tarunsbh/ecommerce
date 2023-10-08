@@ -18,8 +18,8 @@ function App() {
         {/* <ProductDetails /> */}
         {/* <Cart /> */}
         <Checkout />
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 }
