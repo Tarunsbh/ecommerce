@@ -7,29 +7,29 @@ const Cart = () => {
     <div>
       <div className="lg:grid grid-cols-3 lg:px-16 relative">
         <div className="col-span-2">
-          {[1, 1, 1, 1, 1].map((item) => (
-            <CartItem />
+          {[1, 1, 1, 1, 1].map((item, index) => (
+            <CartItem key={index} />
           ))}
         </div>
-        <div className="px-5 sticky top-0 h-[100vh] mt-5 lg:mt-0 j">
+        <div className="px-5 sticky top-0 h-[100vh] mt-5 lg:mt-0">
           <div className="border">
-            <p className="Uppercase opacity-60 pb-4 mt-5 font-bold text-left">
+            <p className="uppercase opacity-60 pb-4 mt-5 font-bold text-left">
               Price Details
             </p>
             <hr />
-            <div className="space-y-3 font-semibold ">
+            <div className="space-y-3 font-semibold">
               <div className="flex justify-between pt-3 text-black">
                 <span>Price</span>
                 <span> ₹ 2595.00</span>
               </div>
             </div>
-            <div className="space-y-3 font-semibold ">
+            <div className="space-y-3 font-semibold">
               <div className="flex justify-between pt-3">
                 <span>Discount</span>
                 <span className="text-green-600"> ₹ 595.00</span>
               </div>
             </div>
-            <div className="space-y-3 font-semibold ">
+            <div className="space-y-3 font-semibold">
               <div className="flex justify-between pt-3">
                 <span>Delivery Charges</span>
                 <span className="text-green-600">Free</span>
@@ -37,7 +37,7 @@ const Cart = () => {
             </div>
             <hr className="mx-auto w-80 mt-2" />
             <div className="space-y-3 font-semibold mb-10">
-              <div className="flex justify-between pt-3 font-bold  text-black">
+              <div className="flex justify-between pt-3 font-bold text-black">
                 <span>Total Amount</span>
                 <span> ₹ 2000.00</span>
               </div>

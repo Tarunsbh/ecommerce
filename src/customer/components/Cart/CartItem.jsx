@@ -1,7 +1,8 @@
-import { Button, IconButton, colors } from "@mui/material";
 import React from "react";
+import { IconButton, Button } from "@mui/material";
 import RemoveCircleOutlineIcon from "@mui/icons-material/RemoveCircleOutline";
 import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
+
 const CartItem = () => {
   return (
     <div className="p-5 shadow-lg border rounded-md">
@@ -14,10 +15,10 @@ const CartItem = () => {
           />
         </div>
         <div className="ml-5 space-y-1">
-          <p className="font-semibold ">
+          <p className="font-semibold">
             Face Pack With Neem & Rosemary (Sensitive & Acne Prone Skin)
           </p>
-          <p className="opacity-70 mt-2 text-left ">
+          <p className="opacity-70 mt-2 text-left">
             Seller: Fruit Of The Earth
           </p>
           <div className="flex space-x-5 items-center text-gray-900 pt-6">
@@ -27,18 +28,18 @@ const CartItem = () => {
           </div>
         </div>
       </div>
-      <div className="lg:flex item lg:space-x-10 pt-4">
+      <div className="lg:flex items lg:space-x-10 pt-4">
         <div className="flex items-center space-x-2">
           <IconButton>
             <RemoveCircleOutlineIcon />
           </IconButton>
           <span className="py-1 px-7 border rounded-sm">3</span>
-          <IconButton sx={{ color: "blue" }}>
+          <IconButton style={{ color: "blue" }}>
             <AddCircleOutlineIcon />
           </IconButton>
         </div>
         <div>
-          <Button sx={{ color: "blue" }}>Remove</Button>
+          <Button style={{ color: "blue" }}>Remove</Button>
         </div>
       </div>
     </div>
